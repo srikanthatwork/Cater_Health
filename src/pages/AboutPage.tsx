@@ -1,6 +1,6 @@
 import React from 'react';
 import { Shield, Award, Users, Microscope, Heart, Globe, Target, Zap, Leaf, TrendingUp, Star, Crown } from 'lucide-react';
-import Image from '../Public/images/portrait-businessman-smiling.jpg'
+import Image from '../Public/images/devarayulu.jpg'
 const AboutPage = () => {
   const stats = [
     { number: '500M+', label: 'Lives Impacted', icon: <Users className="w-5 h-5" /> },
