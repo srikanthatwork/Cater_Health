@@ -31,17 +31,19 @@ const Header = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { 
-      name: 'Products', 
-      href: '/products',
-      hasDropdown: true,
-      dropdownItems: [
-        { name: 'All Products', href: '/products' },
-        { name: 'Gut Health', href: '/category/gut-health' },
-        { name: 'Immune Support', href: '/category/immune-support' },
-        { name: 'Women\'s Health', href: '/category/womens-health' }
-      ]
-    },
+    { name: 'Products', 
+      href: '/products'},
+    // { 
+    //   name: 'Products', 
+    //   href: '/products',
+    //   hasDropdown: true,
+    //   // dropdownItems: [
+    //   //   { name: 'All Products', href: '/products' },
+    //   //   { name: 'Gut Health', href: '/category/gut-health' },
+    //   //   { name: 'Immune Support', href: '/category/immune-support' },
+    //   //   { name: 'Women\'s Health', href: '/category/womens-health' }
+    //   // ]
+    // },
     { name: 'Research', href: '/reports' },
     { name: 'Blog', href: '/blog' },
     { name: 'About', href: '/about' },

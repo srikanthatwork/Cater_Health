@@ -455,7 +455,7 @@ const HomePage = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-gradient-to-br from-amber-50 to-red-50">
+      {/* <section className="py-20 bg-gradient-to-br from-amber-50 to-red-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
@@ -509,6 +509,62 @@ const HomePage = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section> */}
+      <section className="py-20 bg-gradient-to-br from-amber-50 to-red-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+              Lorem{" "}
+              <span className="bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent">
+                Ipsum
+              </span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem animi vero omnis laboriosam laborum expedita est vel reprehenderit labore, iste unde itaque ullam fugit velit molestiae sint eaque qui.
+            </p>
+          </div>
+
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl p-8 shadow-xl border-2 border-amber-200 hover:scale-105 transition-transform duration-300"
+              >
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className={`w-5 h-5 ${
+                        i < testimonial.rating
+                          ? "text-amber-400 fill-current"
+                          : "text-gray-300"
+                      }`}
+                    />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-6 italic leading-relaxed">
+                  "{testimonial.comment}"
+                </p>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="font-black text-gray-900">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      {testimonial.location}
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm font-bold text-red-600">
+                      {testimonial.product}
+                    </p>
+                    <p className="text-xs text-gray-500">Verified Purchase</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div> */}
         </div>
       </section>
 

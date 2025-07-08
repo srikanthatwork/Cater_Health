@@ -5,14 +5,17 @@ import { Calendar, User, ArrowRight, Clock, Tag, Crown, Sparkles, Bell } from 'l
 const BlogPage = () => {
   const featuredArticle = {
     id: 1,
-    title: 'The Future of Nutraceuticals: How AI-Driven Personalization is Revolutionizing Wellness',
-    excerpt: 'Discover how Caterhealth is bridging traditional wellness with modern science through cutting-edge AI technology and personalized health assessments.',
-    author: 'Dr. Priya Sharma',
-    date: 'March 15, 2025',
-    readTime: '8 min read',
-    image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
-    category: 'Innovation',
-    featured: true
+    title:
+      "The Future of Nutraceuticals: How AI-Driven Personalization is Revolutionizing Health",
+    excerpt:
+      "Discover how Caterhealth is bridging traditional wellness with modern science through cutting-edge AI technology and personalized health assessments.",
+    author: "Dr. Priya Sharma",
+    date: "March 15, 2025",
+    readTime: "8 min read",
+    image:
+      "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
+    category: "Innovation",
+    featured: true,
   };
 
   const articles = [
@@ -86,13 +89,14 @@ const BlogPage = () => {
           <div className="text-center">
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-amber-100 to-red-100 text-red-800 px-6 py-3 rounded-full text-sm font-bold mb-6">
               <Crown className="w-5 h-5 text-amber-600" />
-              <span>Wellness Innovation Hub</span>
+              <span> Innovation Hub</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
-              Wellness <span className="text-red-600">Insights</span>
+              <span className="text-red-600">Insights</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Expert insights on nutraceutical innovation, market trends, and the future of personalized wellness
+              Expert insights on nutraceutical innovation, market trends, and
+              the future of personalized Health
             </p>
           </div>
         </div>
@@ -129,7 +133,9 @@ const BlogPage = () => {
                   <div className="flex items-center space-x-4 text-sm text-gray-500">
                     <div className="flex items-center space-x-1">
                       <User className="w-4 h-4" />
-                      <span className="font-semibold">{featuredArticle.author}</span>
+                      <span className="font-semibold">
+                        {featuredArticle.author}
+                      </span>
                     </div>
                     <div className="flex items-center space-x-1">
                       <Calendar className="w-4 h-4" />
@@ -218,12 +224,15 @@ const BlogPage = () => {
             <div className="absolute top-0 left-0 w-96 h-96 bg-amber-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-300 rounded-full mix-blend-multiply filter blur-3xl"></div>
           </div>
-          
+
           <div className="relative">
             <Crown className="w-16 h-16 mx-auto mb-4 text-amber-300" />
-            <h2 className="text-3xl font-black mb-4">Stay Updated with Wellness Innovation</h2>
+            <h2 className="text-3xl font-black mb-4">
+              Stay Updated with Vitality Innovation
+            </h2>
             <p className="text-xl mb-8 opacity-90">
-              Get the latest insights on nutraceutical research, market trends, and wellness innovation delivered to your inbox
+              Get the latest insights on nutraceutical research, market trends,
+              and Vitality innovation delivered to your inbox
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <input

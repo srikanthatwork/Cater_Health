@@ -34,11 +34,10 @@ const AboutPage = () => {
 
   const team = [
     {
-      name: "Devarayalu",
+      name: "Devaraaya Atluri",
       role: "CEO  & Founder",
       // credentials: "Ph.D. Nutraceutical Sciences, IIT Delhi",
-      image:Image
-        ,
+      image: Image,
       // bio: "15+ years pioneering plant-based nutraceutical research and AI-driven personalization",
     },
     // {
@@ -102,10 +101,10 @@ const AboutPage = () => {
           <div className="text-center text-white">
             <div className="inline-flex items-center space-x-2 bg-amber-400/20 text-amber-200 px-6 py-3 rounded-full text-sm font-bold mb-8">
               <Crown className="w-5 h-5" />
-              <span>Revolutionizing Wellness Since 2020</span>
+              <span>Revolutionizing Vitality Since 202</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-black mb-6">
-              Bridging Traditional Wellness
+              Bridging Traditional Vitality
               <span className="block text-amber-300">with Modern Science</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed opacity-90">
@@ -119,7 +118,7 @@ const AboutPage = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -135,7 +134,7 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission & Story */}
       <section className="py-20 bg-gradient-to-br from-amber-50 to-red-50">
@@ -210,7 +209,7 @@ const AboutPage = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
               Leading India's{" "}
-              <span className="text-red-600">Wellness Revolution</span>
+              <span className="text-red-600">Vitality Revolution</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Positioned at the forefront of India's booming nutraceutical
@@ -218,18 +217,26 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-amber-50 to-red-50 p-8 rounded-3xl border-2 border-amber-200">
               <div className="bg-gradient-to-r from-amber-400 to-red-500 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                 <TrendingUp className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-black text-gray-900 mb-3">
-                Market Growth
+                Market Analysis
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                India's nutraceutical sector is experiencing unprecedented
-                growth, driven by rising interest in preventive solutions and
-                post-pandemic health consciousness.
+                India’s nutraceutical sector is experiencing a strong upward
+                trend due to rising interest in preventive solutions, especially
+                post-pandemic. Urbanization, disposable income growth, and the
+                increasing influence of fitness and wellness culture are
+                reshaping consumer behavior. The market is also supported by
+                favorable government initiatives promoting AYUSH and
+                wellness-based industries. Nutraceuticals are gaining popularity
+                not just in metros, but also in Tier 2 and Tier 3 cities, where
+                awareness about natural health boosters is growing. This
+                evolving landscape presents a timely opportunity for
+                differentiated brands to thrive
               </p>
             </div>
 
@@ -237,17 +244,22 @@ const AboutPage = () => {
               <div className="bg-gradient-to-r from-amber-400 to-red-500 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                 <Users className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-black text-gray-900 mb-3">
-                Expanding Reach
-              </h3>
+              <h3 className="text-xl font-black text-gray-900 mb-3">Goals</h3>
               <p className="text-gray-600 leading-relaxed">
-                Growing awareness in Tier 2 and Tier 3 cities, coupled with
-                urbanization and rising disposable income, creates vast
-                opportunities.
+                CaterHealth aims to revolutionize health habits by making
+                natural supplements a seamless part of daily life. Our
+                objectives include introducing innovative formulations based on
+                emerging health trends, expanding product lines for diverse age
+                groups, and ensuring nationwide reach through strategic digital
+                channels. We also seek to build a loyal wellness community
+                through meaningful engagement, user education, and consistent
+                product innovation. Ultimately, our mission is to inspire
+                proactive health choices and position CaterHealth as a leader in
+                India’s clean and conscious wellness space.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-amber-50 to-red-50 p-8 rounded-3xl border-2 border-amber-200">
+            {/* <div className="bg-gradient-to-br from-amber-50 to-red-50 p-8 rounded-3xl border-2 border-amber-200">
               <div className="bg-gradient-to-r from-amber-400 to-red-500 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                 <Shield className="w-6 h-6 text-white" />
               </div>
@@ -259,7 +271,7 @@ const AboutPage = () => {
                 wellness-based industries provide strong regulatory backing for
                 innovation.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -351,7 +363,7 @@ const AboutPage = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-amber-200"
+                  className="w-29 h-29 rounded-full mx-auto mb-6 object-cover border-4 border-amber-200"
                 />
                 <h3 className="text-xl font-black text-gray-900 mb-2">
                   {member.name}

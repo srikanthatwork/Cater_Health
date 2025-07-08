@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
+import { ScrollText } from "lucide-react";
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -33,6 +35,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/category/:category" element={<CategoryPage />} />
               <Route path="/product/:id" element={<ProductPage />} />
+              {/* <Route path="/" element={<ProductPage />} /> */}
               <Route path="/products" element={<ProductsPage />} />
               <Route path="/reports" element={<ReportsPage />} />
               <Route path="/blog" element={<BlogPage />} />
@@ -45,12 +48,26 @@ function App() {
               <Route path="/forgot-password" element={<ForgotPasswordPage />} />
               <Route path="/account" element={<AccountPage />} />
               <Route path="/orders" element={<OrdersPage />} />
-              <Route path="/order-tracking/:orderId" element={<OrderTrackingPage />} />
+              <Route
+                path="/order-tracking/:orderId"
+                element={<OrderTrackingPage />}
+              />
               <Route path="/wishlist" element={<WishlistPage />} />
-              <Route path="/recommendations" element={<RecommendationsPage />} />
+              <Route
+                path="/recommendations"
+                element={<RecommendationsPage />}
+              />
             </Routes>
           </main>
           <Footer />
+          {/* Scroll to top button */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="fixed bottom-8 right-8 bg-amber-700 text-amber-50 p-3 rounded-full shadow-lg hover:bg-amber-800 transition-all duration-300 z-50"
+            aria-label="Scroll to top"
+          >
+            <ScrollText size={24} />
+          </button>
         </div>
       </Router>
     </CartProvider>
