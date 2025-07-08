@@ -18,7 +18,7 @@ const HomePage = () => {
       image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
-      name: 'Gut Health',
+      name: ' Health',
       description: 'Prebiotics + Ayurvedic herbs for microbiome balance',
       icon: <Leaf className="w-8 h-8" />,
       href: '/category/gut-health',
@@ -308,7 +308,7 @@ const HomePage = () => {
             {categories.map((category, index) => (
               <Link
                 key={category.name}
-                to={category.href}
+                // to={category.href}
                 className="group relative overflow-hidden bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 border border-amber-200"
               >
                 {/* Background Image */}
@@ -416,7 +416,7 @@ const HomePage = () => {
                   </h3>
                   <p className="text-gray-600 mb-4">{product.description}</p>
 
-                  <div className="flex items-center mb-4">
+                  {/* <div className="flex items-center mb-4">
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
                         <Star
@@ -433,7 +433,7 @@ const HomePage = () => {
                       {product.rating} ({product.reviews.toLocaleString()}{" "}
                       anticipated)
                     </span>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center space-x-2">
@@ -579,14 +579,14 @@ const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center space-x-2 bg-amber-400/20 text-amber-200 px-6 py-3 rounded-full text-sm font-bold mb-8">
             <Target className="w-5 h-5" />
-            <span>Join the Wellness Movement</span>
+            <span>Join The Healthy Movement</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-black mb-6">
             Ready to Transform Your Health?
           </h2>
           <p className="text-xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
-            Experience the future of personalized wellness. Take your free
+            Experience the future of personalized Health. Take your free
             AI-powered health assessment and discover supplements tailored
             specifically for your unique health goals.
           </p>

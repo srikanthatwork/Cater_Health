@@ -240,7 +240,7 @@ const Header = () => {
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Search  products..."
+                    placeholder="Search  Products..."
                     className="w-full pl-14 pr-6 py-4 border-2 border-amber-200 rounded-2xl focus:ring-4 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300 bg-amber-50/30 focus:bg-white text-gray-900 placeholder-gray-500 font-medium shadow-sm hover:shadow-md"
                   />
                   <div className="absolute left-5 top-1/2 transform -translate-y-1/2">
@@ -392,7 +392,7 @@ const Header = () => {
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search luxury wellness products..."
+                  placeholder="Search Products..."
                   className="w-full pl-14 pr-6 py-4 border-2 border-amber-200 rounded-2xl focus:ring-4 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300 bg-white text-gray-900 placeholder-gray-500 font-medium"
                 />
                 <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />

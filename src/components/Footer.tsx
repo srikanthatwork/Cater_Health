@@ -156,7 +156,7 @@ const Footer = () => {
               Elite Collections
             </h3>
             <ul className="space-y-3">
-              <li>
+              {/* <li>
                 <Link
                   to="/category/gut-health"
                   className="text-gray-300 hover:text-amber-400 transition-colors duration-200 flex items-center group font-semibold"
@@ -164,8 +164,8 @@ const Footer = () => {
                   <span className="w-2 h-2 bg-amber-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Gut Health Luxe
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   to="/category/immune-support"
                   className="text-gray-300 hover:text-amber-400 transition-colors duration-200 flex items-center group font-semibold"
@@ -173,8 +173,8 @@ const Footer = () => {
                   <span className="w-2 h-2 bg-amber-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Immune Elite
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   to="/category/womens-health"
                   className="text-gray-300 hover:text-amber-400 transition-colors duration-200 flex items-center group font-semibold"
@@ -182,7 +182,7 @@ const Footer = () => {
                   <span className="w-2 h-2 bg-amber-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Women's Royal
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   to="/account"
@@ -231,7 +231,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-amber-400" />
               </div>
               <div>
-                <p className="text-white font-black">Luxury Headquarters</p>
+                <p className="text-white font-black">Headquarters</p>
                 <p className="text-gray-300">
                   {" "}
                   Plot No: 16, Block No: 01, Vittal Rao Nagar, Madhaur,
