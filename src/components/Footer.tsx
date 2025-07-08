@@ -234,7 +234,7 @@ const Footer = () => {
                 <p className="text-white font-black">Headquarters</p>
                 <p className="text-gray-300">
                   {" "}
-                  Plot No: 16, Block No: 01, Vittal Rao Nagar, Madhaur,
+                  Plot No: 16, Block No: 01, Vittal Rao Nagar, Madhapur,
                   Hyderabad, Telangana - 500085
                 </p>
               </div>
