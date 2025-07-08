@@ -43,8 +43,8 @@ const HomePage = () => {
     {
       id: 'turmeric-plus',
       name: 'Turmeric+ Joint Health',
-      price: 49.99,
-      originalPrice: 59.99,
+      price: "....",
+      originalPrice: "....",
       rating: 4.8,
       reviews: 1284,
       image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=300',
@@ -56,7 +56,7 @@ const HomePage = () => {
     {
       id: 'mindzen-stress',
       name: 'MindZen Stress Relief',
-      price: 44.99,
+      price: "....",
       rating: 4.7,
       reviews: 892,
       image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=300',
@@ -68,7 +68,7 @@ const HomePage = () => {
     {
       id: 'digestease-gut',
       name: 'DigestEase Gut Balance',
-      price: 47.99,
+      price: "....",
       rating: 4.9,
       reviews: 756,
       image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=300',
@@ -160,25 +160,32 @@ const HomePage = () => {
                 <Sparkles className="w-5 h-5 text-amber-600" />
                 <span>Preventive Care Meets Modern Science</span>
               </div>
-              
+
               <h1 className="text-5xl md:text-7xl font-black text-gray-900 mb-6 leading-tight">
                 Science-Backed
-                <span className="bg-gradient-to-r from-amber-500 via-red-600 to-amber-600 bg-clip-text text-transparent"> Wellness</span>
-                <br />Rooted in Nature
+                <span className="bg-gradient-to-r from-amber-500 via-red-600 to-amber-600 bg-clip-text text-transparent">
+                  {" "}
+                  Vitality
+                </span>
+                <br />
+                Rooted in Nature
               </h1>
-              
+
               <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
-                Personalized Plant-Based Supplements for Immunity, Gut Health & Mental Clarity. 
-                Where traditional wellness meets cutting-edge AI technology.
+                Personalized Plant-Based Supplements for Immunity, Gut Health &
+                Mental Clarity. Where traditional wellness meets cutting-edge AI
+                technology.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-6 mb-12">
                 <button
                   onClick={handleHealthAssessment}
                   className="group bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-black py-5 px-10 rounded-2xl transition-all duration-300 inline-flex items-center justify-center shadow-2xl hover:shadow-3xl hover:scale-105"
                 >
                   <Brain className="mr-3 w-6 h-6" />
-                  <span className="text-lg">Take Your Free Health Assessment</span>
+                  <span className="text-lg">
+                    Take Your Free Health Assessment
+                  </span>
                   <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
                 </button>
                 <button className="group border-3 border-amber-400 hover:border-red-500 text-gray-700 hover:text-red-600 font-black py-5 px-10 rounded-2xl transition-all duration-300 inline-flex items-center justify-center bg-white/80 backdrop-blur-sm">
@@ -194,8 +201,12 @@ const HomePage = () => {
                     <div className="bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl mb-3 inline-flex items-center justify-center text-amber-600 border border-amber-200">
                       {feature.icon}
                     </div>
-                    <h3 className="font-black text-gray-900 text-sm">{feature.label}</h3>
-                    <p className="text-xs text-gray-600 mt-1">{feature.description}</p>
+                    <h3 className="font-black text-gray-900 text-sm">
+                      {feature.label}
+                    </h3>
+                    <p className="text-xs text-gray-600 mt-1">
+                      {feature.description}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -206,7 +217,7 @@ const HomePage = () => {
               <div className="relative z-10">
                 <img
                   src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Science-Backed Wellness Products"
+                  alt="Science-Backed  Products"
                   className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500 border-4 border-amber-200"
                 />
                 {/* Floating Elements */}
@@ -239,26 +250,37 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
-              Why <span className="bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent">CaterHealth?</span>
+              Why{" "}
+              <span className="bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent">
+                CaterHealth?
+              </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Clinically Formulated. Sustainably Sourced. AI-Powered Personalization.
+              Clinically Formulated. Sustainably Sourced. AI-Powered
+              Personalization.
             </p>
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-amber-100 to-red-100 text-red-800 px-6 py-3 rounded-full text-sm font-bold">
               <Target className="w-5 h-5 text-amber-600" />
               <span>More than supplements - it's a lifestyle movement</span>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {whyCaterHealth.map((item, index) => (
-              <div key={index} className="flex items-start space-x-6 p-8 bg-gradient-to-br from-amber-50 to-red-50 rounded-3xl border-2 border-amber-200 hover:scale-105 transition-transform duration-300">
+              <div
+                key={index}
+                className="flex items-start space-x-6 p-8 bg-gradient-to-br from-amber-50 to-red-50 rounded-3xl border-2 border-amber-200 hover:scale-105 transition-transform duration-300"
+              >
                 <div className="bg-gradient-to-r from-amber-400 to-red-500 p-4 rounded-2xl text-white flex-shrink-0">
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-black text-gray-900 mb-3">{item.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                  <h3 className="text-xl font-black text-gray-900 mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -271,13 +293,17 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
-              Targeted Solutions for <span className="bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent">Every Health Goal</span>
+              Targeted Solutions for{" "}
+              <span className="bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent">
+                Every Health Goal
+              </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Harness the power of adaptogens, herbs, superfoods, and bioactive compounds for immunity, gut health, mental clarity, and vitality
+              Harness the power of adaptogens, herbs, superfoods, and bioactive
+              compounds for immunity, gut health, mental clarity, and vitality
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {categories.map((category, index) => (
               <Link
@@ -292,21 +318,27 @@ const HomePage = () => {
                     alt={category.name}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700 opacity-80"
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${category.color} opacity-80`}></div>
-                  
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-t ${category.color} opacity-80`}
+                  ></div>
+
                   {/* Coming Soon Badge */}
                   <div className="absolute top-4 right-4 bg-amber-400 text-gray-900 px-3 py-1 rounded-full text-sm font-black">
                     Coming Soon
                   </div>
                 </div>
-                
+
                 {/* Content */}
                 <div className="absolute inset-0 p-8 flex flex-col justify-end text-white">
-                  <div className={`w-16 h-16 rounded-2xl ${category.bgColor} flex items-center justify-center mb-6 ${category.textColor} group-hover:scale-110 transition-transform duration-300 border border-amber-200`}>
+                  <div
+                    className={`w-16 h-16 rounded-2xl ${category.bgColor} flex items-center justify-center mb-6 ${category.textColor} group-hover:scale-110 transition-transform duration-300 border border-amber-200`}
+                  >
                     {category.icon}
                   </div>
                   <h3 className="text-2xl font-black mb-3">{category.name}</h3>
-                  <p className="text-white/90 mb-6 leading-relaxed">{category.description}</p>
+                  <p className="text-white/90 mb-6 leading-relaxed">
+                    {category.description}
+                  </p>
                   <div className="flex items-center text-white font-bold group-hover:translate-x-2 transition-transform duration-300">
                     <Clock className="mr-2 w-5 h-5" />
                     <span>Coming Soon</span>
@@ -324,16 +356,23 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
-              Bestsellers <span className="bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent">Carousel</span>
+              Bestsellers{" "}
+              <span className="bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent">
+                Carousel
+              </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our most anticipated science-backed formulations, coming soon for targeted health solutions
+              Our most anticipated science-backed formulations, coming soon for
+              targeted health solutions
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {bestSellers.map((product, index) => (
-              <div key={product.id} className="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden hover:scale-105 border border-amber-200 relative">
+              <div
+                key={product.id}
+                className="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden hover:scale-105 border border-amber-200 relative"
+              >
                 {/* Coming Soon Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 z-10 flex items-center justify-center">
                   <div className="text-center">
@@ -370,31 +409,42 @@ const HomePage = () => {
                     <Crown className="w-8 h-8 text-amber-400" />
                   </div>
                 </div>
-                
+
                 <div className="p-8">
-                  <h3 className="text-xl font-black text-gray-900 mb-2">{product.name}</h3>
+                  <h3 className="text-xl font-black text-gray-900 mb-2">
+                    {product.name}
+                  </h3>
                   <p className="text-gray-600 mb-4">{product.description}</p>
-                  
+
                   <div className="flex items-center mb-4">
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
-                          className={`w-5 h-5 ${i < Math.floor(product.rating) ? 'text-amber-400 fill-current' : 'text-gray-300'}`}
+                          className={`w-5 h-5 ${
+                            i < Math.floor(product.rating)
+                              ? "text-amber-400 fill-current"
+                              : "text-gray-300"
+                          }`}
                         />
                       ))}
                     </div>
                     <span className="text-sm text-gray-600 ml-2 font-bold">
-                      {product.rating} ({product.reviews.toLocaleString()} anticipated)
+                      {product.rating} ({product.reviews.toLocaleString()}{" "}
+                      anticipated)
                     </span>
                   </div>
-                  
+
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center space-x-2">
-                      <span className="text-2xl font-black text-gray-900">₹{product.price}</span>
-                      {product.originalPrice && (
-                        <span className="text-lg text-gray-500 line-through">₹{product.originalPrice}</span>
-                      )}
+                      <span className="text-2xl font-black text-gray-900">
+                        INR{product.price}
+                      </span>
+                      {/* {product.originalPrice && (
+                        <span className="text-lg text-gray-500 line-through">
+                          INR{product.originalPrice}
+                        </span>
+                      )} */}
                     </div>
                   </div>
                 </div>
@@ -409,32 +459,50 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
-              Customer <span className="bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent">Stories</span>
+              Customer{" "}
+              <span className="bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent">
+                Stories
+              </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Real results from our community of wellness enthusiasts
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-3xl p-8 shadow-xl border-2 border-amber-200 hover:scale-105 transition-transform duration-300">
+              <div
+                key={index}
+                className="bg-white rounded-3xl p-8 shadow-xl border-2 border-amber-200 hover:scale-105 transition-transform duration-300"
+              >
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
-                      className={`w-5 h-5 ${i < testimonial.rating ? 'text-amber-400 fill-current' : 'text-gray-300'}`}
+                      className={`w-5 h-5 ${
+                        i < testimonial.rating
+                          ? "text-amber-400 fill-current"
+                          : "text-gray-300"
+                      }`}
                     />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-6 italic leading-relaxed">"{testimonial.comment}"</p>
+                <p className="text-gray-700 mb-6 italic leading-relaxed">
+                  "{testimonial.comment}"
+                </p>
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-black text-gray-900">{testimonial.name}</p>
-                    <p className="text-sm text-gray-600">{testimonial.location}</p>
+                    <p className="font-black text-gray-900">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      {testimonial.location}
+                    </p>
                   </div>
                   <div className="text-right">
-                    <p className="text-sm font-bold text-red-600">{testimonial.product}</p>
+                    <p className="text-sm font-bold text-red-600">
+                      {testimonial.product}
+                    </p>
                     <p className="text-xs text-gray-500">Verified Purchase</p>
                   </div>
                 </div>
@@ -457,15 +525,16 @@ const HomePage = () => {
             <Target className="w-5 h-5" />
             <span>Join the Wellness Movement</span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-black mb-6">
             Ready to Transform Your Health?
           </h2>
           <p className="text-xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
-            Experience the future of personalized wellness. Take your free AI-powered health assessment 
-            and discover supplements tailored specifically for your unique health goals.
+            Experience the future of personalized wellness. Take your free
+            AI-powered health assessment and discover supplements tailored
+            specifically for your unique health goals.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button
               onClick={handleHealthAssessment}

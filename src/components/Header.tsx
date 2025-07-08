@@ -110,9 +110,9 @@ const Header = () => {
                 <span className="text-2xl font-black text-gray-900 leading-tight">
                   Cater Health
                 </span>
-                <span className="text-xs text-red-600 font-bold uppercase tracking-widest">
+                {/* <span className="text-xs text-red-600 font-bold uppercase tracking-widest">
                   Luxury Wellness
-                </span>
+                </span> */}
               </div>
             </Link>
 
@@ -155,9 +155,9 @@ const Header = () => {
                             <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wide">
                               Premium Products
                             </h3>
-                            <p className="text-xs text-gray-500 mt-1">
+                            {/* <p className="text-xs text-gray-500 mt-1">
                               Luxury wellness solutions
-                            </p>
+                            </p> */}
                           </div>
 
                           {/* Dropdown Items */}
@@ -238,7 +238,7 @@ const Header = () => {
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Search luxury wellness products..."
+                    placeholder="Search  products..."
                     className="w-full pl-14 pr-6 py-4 border-2 border-amber-200 rounded-2xl focus:ring-4 focus:ring-red-500/20 focus:border-red-500 transition-all duration-300 bg-amber-50/30 focus:bg-white text-gray-900 placeholder-gray-500 font-medium shadow-sm hover:shadow-md"
                   />
                   <div className="absolute left-5 top-1/2 transform -translate-y-1/2">
@@ -295,7 +295,7 @@ const Header = () => {
                         Your Account
                       </p>
                       <p className="text-xs text-gray-500 mt-1">
-                        Manage your luxury wellness journey
+                        Manage your  journey
                       </p>
                     </div>
 

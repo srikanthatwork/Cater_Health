@@ -1,9 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Mail, Phone, MapPin, ArrowRight, Heart, Crown, Diamond, Sparkles } from 'lucide-react';
-import logo from '../Public/images/Caterhealth-new-logo.png'; // Adjust the path as necessary
-
-
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin,
+  ArrowRight,
+  Heart,
+  Crown,
+  Diamond,
+  Sparkles,
+} from "lucide-react";
+import logo from "../Public/images/Caterhealth-new-logo.png"; // Adjust the path as necessary
 
 const Footer = () => {
   return (
@@ -19,29 +29,28 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-            <img
-                  src={logo}
-                  alt=""
-                  style={{
-                    width: "50px",
-                    height: "50px",
-                    objectFit: "contain",
-                    // borderRadius: '50%',
-                    // boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
-                  }}
-                />
+              <img
+                src={logo}
+                alt=""
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  objectFit: "contain",
+                  // borderRadius: '50%',
+                  // boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+                }}
+              />
               <div>
                 <span className="text-2xl font-black text-white">
                   Cater Health
                 </span>
-                <p className="text-xs text-amber-400 font-bold uppercase tracking-widest">
+                {/* <p className="text-xs text-amber-400 font-bold uppercase tracking-widest">
                   Luxury Wellness
-                </p>
+                </p> */}
               </div>
             </div>
             <p className="text-gray-300 mb-6 text-lg leading-relaxed max-w-md">
-              Elevating lives through luxury wellness solutions. Your journey to
-              elite health and vitality begins here.
+              Science-driven solutions for peak health and performance.
             </p>
 
             {/* Newsletter Signup */}
@@ -205,7 +214,7 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-white font-black">Elite Support</p>
-                <p className="text-gray-300">+91 707 6667 666</p>
+                <p className="text-gray-300">+91 9700-112-000</p>
               </div>
             </div>
             <div className="flex items-center space-x-3">
@@ -225,8 +234,8 @@ const Footer = () => {
                 <p className="text-white font-black">Luxury Headquarters</p>
                 <p className="text-gray-300">
                   {" "}
-                  Plot No: 01, Block No:01, Vittal Rao Nagar, Madhapur,
-                  Hyderabad - 500081{" "}
+                  Plot No: 16, Block No: 01, Vittal Rao Nagar, Madhaur,
+                  Hyderabad, Telangana - 500085
                 </p>
               </div>
             </div>
@@ -240,7 +249,7 @@ const Footer = () => {
               &copy; 2025 Cater Health. Crafted with
             </p>
             <Heart className="w-4 h-4 text-red-500 fill-current" />
-            <p className="text-gray-400">for your luxury wellness journey.</p>
+            <p className="text-gray-400">for your journey.</p>
           </div>
           <div className="flex space-x-6 text-sm">
             <Link

@@ -94,9 +94,9 @@ const LoginPage = () => {
               <span className="text-3xl font-black text-gray-900">
                 Cater Health
               </span>
-              <p className="text-xs text-red-600 font-bold uppercase tracking-widest">
+              {/* <p className="text-xs text-red-600 font-bold uppercase tracking-widest">
                 Luxury Wellness
-              </p>
+              </p> */}
             </div>
           </Link>
 

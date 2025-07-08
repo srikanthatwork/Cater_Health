@@ -467,7 +467,7 @@ const AboutPage = () => {
             Ready to Transform Your Health?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Join the wellness revolution with CaterHealth's science-backed,
+            Join the Vitality revolution with CaterHealth's science-backed,
             personalized nutrition solutions. Experience the future of
             preventive healthcare today.
           </p>
