@@ -64,10 +64,12 @@ function App() {
           {/* Scroll to top button */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="fixed bottom-8 right-8 bg-amber-700 text-amber-50 p-3 rounded-full shadow-lg hover:bg-amber-800 transition-all duration-300 z-50"
+            className="fixed bottom-8 right-8 bg-gradient-to-r from-red-600 via-red-700 to-red-800 p-3 rounded-full shadow-lg hover:bg-amber-800 transition-all duration-300 z-50"
             aria-label="Scroll to top"
           >
-            <ArrowUp size={24} />
+            <ArrowUp size={24} style={{
+              color: 'white',
+            }} />
           </button>
         </div>
       </Router>
