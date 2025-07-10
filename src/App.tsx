@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
-import { ScrollText } from "lucide-react";
+// import { ScrollText } from "lucide-react";
+import { ArrowUp } from "lucide-react"; 
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -66,7 +67,7 @@ function App() {
             className="fixed bottom-8 right-8 bg-amber-700 text-amber-50 p-3 rounded-full shadow-lg hover:bg-amber-800 transition-all duration-300 z-50"
             aria-label="Scroll to top"
           >
-            <ScrollText size={24} />
+            <ArrowUp size={24} />
           </button>
         </div>
       </Router>
