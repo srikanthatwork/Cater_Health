@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ShoppingCart, Menu, X, User, Search, Download, Wallet, ChevronDown, Heart, Bell, Crown } from 'lucide-react';
 import { useCart } from '../context/CartContext';
-import logo from '../Public/images/Caterhealth-new-logo.png'; // Adjust the path as necessary
+import logo from '../Public/images/CH Vertical - dark.png'; // Adjust the path as necessary
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -103,15 +103,15 @@ const Header = () => {
                 <img
                   src={logo}
                   alt="Cater Health Logo"
-                  className="w-12 h-12 object-contain"
+                  className="w-[70px] h-[70px] object-contain"
                 />
               </div>
 
               {/* Text: hidden on mobile, shown on tablets and up */}
               <div className="hidden sm:flex flex-col">
-                <span className="text-2xl font-black text-gray-900 leading-tight">
+                {/* <span className="text-2xl font-black text-gray-900 leading-tight">
                   Cater Health
-                </span>
+                </span> */}
                 {/* <span className="text-xs text-red-600 font-bold uppercase tracking-widest">
                   Luxury Wellness
                 </span> */}
@@ -233,7 +233,7 @@ const Header = () => {
             </nav>
 
             {/* Search Bar */}
-            <div className="hidden md:flex flex-1 max-w-lg mx-8">
+            <div className="hidden md:flex flex max-w-lg mx-8">
               <form onSubmit={handleSearch} className="w-full relative">
                 <div className="relative group">
                   <input

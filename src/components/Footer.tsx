@@ -13,7 +13,7 @@ import {
   Diamond,
   Sparkles,
 } from "lucide-react";
-import logo from "../Public/images/Caterhealth-new-logo.png"; // Adjust the path as necessary
+import logo from "../Public/images/CH Vertical - white.png"; // Adjust the path as necessary
 
 const Footer = () => {
   return (
@@ -31,19 +31,14 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               <img
                 src={logo}
-                alt=""
-                style={{
-                  width: "50px",
-                  height: "50px",
-                  objectFit: "contain",
-                  // borderRadius: '50%',
-                  // boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
-                }}
+                alt="Cater Health Logo"
+                className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] object-contain"
               />
+
               <div>
-                <span className="text-2xl font-black text-white">
+                {/* <span className="text-2xl font-black text-white">
                   Cater Health
-                </span>
+                </span> */}
                 {/* <p className="text-xs text-amber-400 font-bold uppercase tracking-widest">
                   Luxury Wellness
                 </p> */}
