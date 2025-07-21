@@ -8,75 +8,96 @@ const HomePage = () => {
 
   const categories = [
     {
-      name: 'Immunity Boost',
-      description: 'Amla, Elderberry & Astragalus for natural defense',
+      // name: "Immunity Boost",
+      name: "Lorem ipsum",
+
+      // description: "Amla, Elderberry & Astragalus for natural defense",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
       icon: <Shield className="w-8 h-8" />,
-      href: '/category/immune-support',
-      color: 'from-amber-500 to-red-500',
-      bgColor: 'bg-amber-50',
-      textColor: 'text-amber-600',
-      image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=400'
+      href: "/category/immune-support",
+      color: "from-amber-500 to-red-500",
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-600",
+      image:
+        "https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
     {
-      name: ' Health',
-      description: 'Prebiotics + Ayurvedic herbs for microbiome balance',
+      // name: " Health",
+      name: "Lorem ipsum",
+      // description: "Prebiotics + Ayurvedic herbs for microbiome balance",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
       icon: <Leaf className="w-8 h-8" />,
-      href: '/category/gut-health',
-      color: 'from-red-500 to-red-600',
-      bgColor: 'bg-red-50',
-      textColor: 'text-red-600',
-      image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=400'
+      href: "/category/gut-health",
+      color: "from-red-500 to-red-600",
+      bgColor: "bg-red-50",
+      textColor: "text-red-600",
+      image:
+        "https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
     {
-      name: 'Mental Clarity',
-      description: 'Adaptogens & nootropics for cognitive enhancement',
+      // name: "Mental Clarity",
+      name: "Lorem ipsum",
+      // description: "Adaptogens & nootropics for cognitive enhancement",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
       icon: <Brain className="w-8 h-8" />,
-      href: '/category/mental-clarity',
-      color: 'from-amber-400 to-amber-600',
-      bgColor: 'bg-amber-50',
-      textColor: 'text-amber-600',
-      image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=400'
-    }
+      href: "/category/mental-clarity",
+      color: "from-amber-400 to-amber-600",
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-600",
+      image:
+        "https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=400",
+    },
   ];
 
   const bestSellers = [
     {
-      id: 'turmeric-plus',
-      name: 'Turmeric+ Joint Health',
+      id: "turmeric-plus",
+      // name: 'Turmeric+ Joint Health',
+      name: "lorem ipsum",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
       price: "....",
       originalPrice: "....",
       rating: 4.8,
       reviews: 1284,
-      image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=300',
-      category: 'joint-health',
-      badge: 'Coming Soon',
-      description: 'Curcumin with Piperine for enhanced bioavailability',
-      comingSoon: true
+      image:
+        "https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=300",
+      category: "joint-health",
+      badge: "Coming Soon",
+      // description: "Curcumin with Piperine for enhanced bioavailability",
+      comingSoon: true,
     },
     {
-      id: 'mindzen-stress',
-      name: 'MindZen Stress Relief',
+      id: "mindzen-stress",
+      // name: "MindZen Stress Relief",
+      name: "lorem ipsum",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
       price: "....",
       rating: 4.7,
       reviews: 892,
-      image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=300',
-      category: 'mental-clarity',
-      badge: 'Coming Soon',
-      description: 'Ashwagandha & L-Theanine for cortisol reduction',
-      comingSoon: true
+      image:
+        "https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=300",
+      category: "mental-clarity",
+      badge: "Coming Soon",
+      // description: "Ashwagandha & L-Theanine for cortisol reduction",
+      comingSoon: true,
     },
     {
-      id: 'digestease-gut',
-      name: 'DigestEase Gut Balance',
+      id: "digestease-gut",
+      // name: "DigestEase Gut Balance",
+      name: "lorem ipsum",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
       price: "....",
       rating: 4.9,
       reviews: 756,
-      image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=300',
-      category: 'gut-health',
-      badge: 'Coming Soon',
-      description: 'Prebiotics + probiotics for digestive harmony',
-      comingSoon: true
-    }
+      image:
+        "https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=300",
+      category: "gut-health",
+      badge: "Coming Soon",
+      // description: "Prebiotics + probiotics for digestive harmony",
+      comingSoon: true,
+    },
   ];
 
   const features = [
@@ -171,10 +192,15 @@ const HomePage = () => {
                 Rooted in Nature
               </h1>
 
-              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+              {/* <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
                 Personalized Plant-Based Supplements for Immunity, Gut Health &
                 Mental Clarity. Where traditional wellness meets cutting-edge AI
-                technology.
+                technology.Personalized Plant-Based Wellness. Where tradition
+                meets AI innovation.
+              </p> */}
+              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+                Personalized Plant-Based Wellness. Where tradition
+                meets AI innovation.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 mb-12">
@@ -298,9 +324,15 @@ const HomePage = () => {
                 Every Health Goal
               </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            {/* <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Harness the power of adaptogens, herbs, superfoods, and bioactive
               compounds for immunity, gut health, mental clarity, and vitality
+            </p> */}
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit,
+              dolorem! Consequuntur ut dignissimos eaque aut quis nesciunt
+              suscipit quam hic praesentium. Fugit, ex harum fugiat nemo ut
+              voluptatibus amet neque.
             </p>
           </div>
 
@@ -521,7 +553,10 @@ const HomePage = () => {
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem animi vero omnis laboriosam laborum expedita est vel reprehenderit labore, iste unde itaque ullam fugit velit molestiae sint eaque qui.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              dolorem animi vero omnis laboriosam laborum expedita est vel
+              reprehenderit labore, iste unde itaque ullam fugit velit molestiae
+              sint eaque qui.
             </p>
           </div>
 

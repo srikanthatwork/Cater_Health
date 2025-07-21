@@ -44,7 +44,7 @@ const Header = () => {
     //   //   { name: 'Women\'s Health', href: '/category/womens-health' }
     //   // ]
     // },
-    { name: 'Research', href: '/reports' },
+    // { name: 'Research', href: '/reports' },
     { name: 'Blog', href: '/blog' },
     { name: 'About', href: '/about' },
   ];

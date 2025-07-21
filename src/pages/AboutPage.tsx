@@ -23,7 +23,7 @@ const AboutPage = () => {
     {
       icon: <Target className="w-8 h-8" />,
       title: 'Personalized Wellness',
-      description: 'AI-driven health assessments create targeted formulations for immunity, gut health, mental clarity, and vitality.'
+      description: ' Personalized Plant-Based Wellness. Where tradition meets AI innovation.'
     },
     {
       icon: <Globe className="w-8 h-8" />,
